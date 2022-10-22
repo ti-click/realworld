@@ -60,6 +60,18 @@ You can get the ip by the command below. Please add it into your TiDB Cloud secu
 
 OR **You can add `0.0.0.0/0` into white list. Let all access is accepted**
 
+### 4. Run Project 
+
+If you are first run this project the init is necessary by command below.
+```
+./manage.py migrate
+```
+
+You can start the webserver by command below.
+```
+./manage.py runserver
+```
+
 ### Referance
 1. https://danjacob.net/posts/anatomyofdjangohtmxproject/
 2. https://readthedocs.org/projects/django-conduit/downloads/pdf/latest/
