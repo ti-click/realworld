@@ -5,11 +5,27 @@ Thanks [danjac/realworld](https://github.com/danjac/realworld) project offer so 
 
 This Project is created for Ti-Click project join PingCAP Hackathon 2022.
 
-### 1. Ready the TiDB
+### 1. Ready the TiDB Cluster
 You can create the TiDB Cluster on [TiDB Cloud](https://tidbcloud.com) which offer free TiDB Cluster.
 
 ### 2. Access Gitpod
 Access [Real World base Django](https://gitpod.io/#/github.com/ti-click/realworld-base-django) link and open the online IDE.
+
+Then input the `/realworld/settings.py` database setting info. *database name*, *username*, *password* and *host* is necessary.
+Example
+```
+DATABASES = {
+    "default": {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': '${DATABASE}', 
+        'USER': '${USERNAME}', 
+        'PASSWORD': '${PASSWORD}', 
+        'HOST': '${HOST}', 
+        'PORT': '4000'
+    }
+}
+```
+
 
 ### 3. Setting the TiDB variable and security
 #### 3.1 Remove *ONLY_FULL_GROUP_BY* setting 
